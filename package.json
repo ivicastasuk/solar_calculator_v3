@@ -1,11 +1,17 @@
 {
   "name": "solar_calculator_v3",
   "version": "1.0.0",
-  "description": "Kalkulator proizvodnje elektricne energije iz solarnih sistema",
-  "main": "index.js",
+  "description": "Kalkulator za izračunavanje proizvodnje električne energije u solarnim elektranama.",
+  "main": "tailwind.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "npx @tailwindcss/cli -i ./dev/input.css -o ./_src/public/css/main.css --watch"
   },
+  "keywords": [],
   "author": "",
-  "license": "GPL-3.0-or-later"
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.17",
+    "tailwindcss": "^4.0.17"
+  }
 }
